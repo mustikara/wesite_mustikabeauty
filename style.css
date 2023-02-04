@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.jumbotron {
+    width: 100%;
+    height: 100vh;
+    padding-top: 8rem;
+    background-image: url('../img/background2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #ffffff;
+}
+
+#about {
+    padding-top: 6rem;
+    width: 100%;
+}
+
+#services {
+    padding-top: 4rem;
+    background-color: #ffc0cb;
+}
+
+.auth {
+    width: 100%;
+    height: 100vh;
+    padding-top: 4rem;
+    background-image: url('../img/background3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.auth .card {
+    box-shadow: -8px 12px 18px 0 rgb(25, 42, 70, 0.13);
+    margin-bottom: 2.2rem;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    padding: 2px;
+}
+
+.hero {
+    width: 100%;
+    height: 100vh;
+    text-shadow: 0px 5px 30px rgba(65, 84, 241, 0.4);
+    background-image: url('../img/background1.jpg');
+    background-size: cover;
+}
+
+.hero h1 {
+    margin: 0;
+    font-size: 48px;
+    font-weight: 700;
+    color: #012970;
+}
+
+.hero h3 {
+    color: #444444;
+    text-shadow: 0px 5px 30px rgba(65, 84, 241, 0.4);
+    margin: 15px 0 0 0;
+}
+
+.hero h5 {
+    color: #444444;
+    text-shadow: 0px 5px 30px rgba(65, 84, 241, 0.4);
+    margin: 20px 0 0 0;
+}
+
+.hero .btn-login {
+    margin-top: 40px;
+    line-height: 0;
+    padding: 15px 40px;
+    border-radius: 4px;
+    color: #ffffff;
+    background: #444444;
+}
+
+.hero .btn-login:hoover::after {
+    width: 100%;
+}
+
+footer {
+    padding: 5px;
+    font-size: 12px;
+    color: #012970;
+    background-color: #ffc0cb;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(img/background3.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .login-email {
+    width: 400px;
+    min-height: 400px;
+    background: #FFF;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .3);
+    padding: 40px 30px;
+}
+
+.container .login-text {
+    color: #111;
+    font-weight: 500;
+    font-size: 1.1rem;
+    text-align: center;
+    margin-bottom: 20px;
+    display: block;
+    text-transform: capitalize;
+}
+
+.container .login-social {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+    margin-bottom: 25px;
+}
+
+.container .login-social a {
+    padding: 12px;
+    margin: 10px;
+    border-radius: 3px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .3);
+    text-decoration: none;
+    font-size: 1rem;
+    text-align: center;
+    color: #FFF;
+    transition: .3s;
+}
+
+.container .login-social a i {
+    margin-right: 5px;
+}
+
+.container .login-email .input-group {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 25px;
+}
+
+.container .login-email .input-group input {
+    width: 100%;
+    height: 100%;
+    border: 2px solid #e7e7e7;
+    padding: 15px 20px;
+    font-size: 1rem;
+    border-radius: 30px;
+    background: transparent;
+    outline: none;
+    transition: .3s;
+}
+
+.container .login-email .input-group input:focus,
+.container .login-email .input-group input:valid {
+    border-color: #a29bfe;
+}
+
+.container .login-email .input-group .btn {
+    display: block;
+    width: 100%;
+    padding: 15px 20px;
+    text-align: center;
+    border: none;
+    background: #a29bfe;
+    outline: none;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    color: #FFF;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.container .btn-login:hover {
+    transform: translateY(-5px);
+    background: #6c5ce7;
+}
+
+.container .login-email .input-group .btn:hover {
+    transform: translateY(-5px);
+    background: #6c5ce7;
+}
+
+.login-register-text {
+    color: #111;
+    font-weight: 600;
+}
+
+.login-register-text a {
+    text-decoration: none;
+    color: #6c5ce7;
+}
+
+@media (max-width: 430px) {
+    .container {
+        width: 300px;
+    }
+    .container .login-social {
+        display: block;
+    }
+    .container .login-social a {
+        display: block;
+    }
+}
